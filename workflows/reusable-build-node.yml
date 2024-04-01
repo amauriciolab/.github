@@ -6,4 +6,4 @@ on:
 jobs:
   ci:
     name: run build process
-    uses: amauriciolab/GHA.workflows/.github/workflows/gha.workflows.build-node.yml@main
+    uses: amauriciolab/workflows/.github/workflows/gha.workflows.build-node.yml@main
