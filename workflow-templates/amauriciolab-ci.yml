@@ -1,4 +1,4 @@
-name: amauriciolab CI
+name: Node.js CI workflow
 
 on:
   push:
@@ -7,11 +7,9 @@ on:
     branches: [ $default-branch ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+   ci:
+    name: Deployment
+    uses: JediSchools/GHA.Jedi.Templates/.github/workflows/gha.workflows.build-node.yml@main
 
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo Hello from amauriciolab
+ 
